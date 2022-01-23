@@ -1,4 +1,4 @@
-from protobuf_example.person_pb2 import Person
+from simple_example.person_pb2 import Person
 
 def test_person() -> None:
   p = Person()
