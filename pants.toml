@@ -1,5 +1,5 @@
 [GLOBAL]
-pants_version = "2.10.0.dev1"
+pants_version = "2.10.0.dev2"
 backend_packages = [
   "pants.backend.codegen.protobuf.python",
   "pants.backend.experimental.codegen.thrift.apache.python",
@@ -21,7 +21,7 @@ runtime_dependencies = [
   "//3rdparty/python:protobuf",
 ]
 
-[thrift-python]
+[python-thrift]
 runtime_dependencies = [
   "//3rdparty/python:thrift",
 ]
