@@ -47,15 +47,9 @@ jobs:
         ./pants --version
     - name: Check BUILD files
       run: ./pants tailor --check update-build-files --check
-    - name: Lint and typecheck
-      run: | 
-        ./pants lint typecheck ::
     - name: Test
       run: |
         ./pants test ::
-    - name: Package / Run
-      run: |
-        ./pants package ::
     - name: Upload pants log
       uses: actions/upload-artifact@v2
       with:
