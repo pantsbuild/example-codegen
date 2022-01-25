@@ -1,0 +1,30 @@
+[GLOBAL]
+pants_version = "2.10.0.dev2"
+backend_packages = [
+  "pants.backend.codegen.protobuf.python",
+  "pants.backend.experimental.codegen.thrift.apache.python",
+  "pants.backend.python",
+]
+
+use_deprecated_python_macros = false
+
+[source]
+root_patterns = ["src/*"]
+
+[anonymous-telemetry]
+enabled = true
+repo_id = "205E301D-44A4-42FF-8495-C9D41871A431"
+
+[python]
+interpreter_constraints = ["CPython>=3.8,<3.10"]
+
+[python-protobuf]
+runtime_dependencies = [
+  "3rdparty/python#protobuf",
+]
+
+[python-thrift]
+runtime_dependencies = [
+  "3rdparty/python#thrift",
+]
+
