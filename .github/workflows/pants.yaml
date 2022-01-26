@@ -43,12 +43,11 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
     - name: Download Apache `thrift` binary
-      run: 'mkdir -p "$HOME/.thrift"
-        curl --fail -L https://binaries.pantsbuild.org/bin/thrift/linux/x86_64/0.15.0/thrift
-        -o "$HOME/.thrift/thrift"
+      run: |
+        mkdir -p "$HOME/.thrift"
+        curl --fail -L https://binaries.pantsbuild.org/bin/thrift/linux/x86_64/0.15.0/thrift  -o "$HOME/.thrift/thrift"
         chmod +x "$HOME/.thrift/thrift"
         echo "PATH=${PATH}:${HOME}/.thrift" >> $GITHUB_ENV
-        '
     - name: Bootstrap Pants
       run: |
         ./pants --version
@@ -57,9 +56,3 @@ jobs:
     - name: Test
       run: |
         ./pants test ::
-    - name: Upload pants log
-      uses: actions/upload-artifact@v2
-      with:
-        name: pants-log
-        path: .pants.d/pants.log
-      if: always()  # We want the log even on failures.
