@@ -1,4 +1,3 @@
 protobuf_sources(
-  python_source_root="src/python",
+    python_source_root="src/python",
 )
-
