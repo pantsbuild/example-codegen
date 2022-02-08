@@ -1,15 +1,12 @@
 [GLOBAL]
-pants_version = "2.10.0.dev3"
+pants_version = "2.10.0rc0"
 backend_packages = [
   "pants.backend.codegen.protobuf.python",
-  "pants.backend.experimental.codegen.thrift.apache.python",
+  "pants.backend.codegen.thrift.apache.python",
   "pants.backend.python",
 ]
 
 use_deprecated_python_macros = false
-
-[source]
-root_patterns = ["src/*"]
 
 [anonymous-telemetry]
 enabled = true
