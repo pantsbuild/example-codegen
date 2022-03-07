@@ -1,5 +1,5 @@
 [GLOBAL]
-pants_version = "2.10.0rc0"
+pants_version = "2.10.0rc3"
 backend_packages = [
   "pants.backend.codegen.protobuf.python",
   "pants.backend.codegen.thrift.apache.python",
@@ -14,10 +14,3 @@ repo_id = "205E301D-44A4-42FF-8495-C9D41871A431"
 
 [python]
 interpreter_constraints = ["CPython>=3.8,<3.11"]
-enable_resolves = true
-
-[python-protobuf]
-runtime_dependencies = ["3rdparty/python#protobuf"]
-
-[python-thrift]
-runtime_dependencies = ["3rdparty/python#thrift"]
