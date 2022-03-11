@@ -6,6 +6,9 @@ backend_packages = [
   "pants.backend.python",
 ]
 
+# This will become the default in 2.11, and is only explicitly set to not break
+# backwards-compatibility for existing users. If you are setting up Pants for
+# the first time, set this to false.
 use_deprecated_python_macros = false
 
 [anonymous-telemetry]
@@ -14,3 +17,9 @@ repo_id = "205E301D-44A4-42FF-8495-C9D41871A431"
 
 [python]
 interpreter_constraints = ["CPython>=3.8,<3.11"]
+
+# Enable the "resolves" mechanism, which turns on lockfiles for user code. See
+ # https://www.pantsbuild.org/docs/python-third-party-dependencies. This also adds the
+ # `generate-lockfiles` goal for Pants to generate the lockfile for you, although in some
+ # situations you may need to manually generate it, as explained in the docs.
+enable_resolves = true
