@@ -3,6 +3,8 @@ pants_version = "2.11.0rc0"
 backend_packages = [
   "pants.backend.codegen.protobuf.python",
   "pants.backend.codegen.thrift.apache.python",
+  "pants.backend.experimental.codegen.protobuf.scala",
+  "pants.backend.experimental.scala",
   "pants.backend.python",
 ]
 
@@ -18,3 +20,6 @@ interpreter_constraints = ["CPython>=3.8,<3.11"]
  # `generate-lockfiles` goal for Pants to generate the lockfile for you, although in some
  # situations you may need to manually generate it, as explained in the docs.
 enable_resolves = true
+
+[scala.version_for_resolve]
+"jvm-default" = "2.13.8"
