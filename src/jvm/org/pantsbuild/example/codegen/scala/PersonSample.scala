@@ -1,6 +1,6 @@
 package org.pantsbuild.example.codegen.scala
 
-import org.pantsbuild.example.codegen.protos.Person
+import org.pantsbuild.example.codegen.protos.person.Person
 
 object PersonSample {
   def main(args: Array[String]): Unit = {
