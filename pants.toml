@@ -1,9 +1,10 @@
 [GLOBAL]
 pants_version = "2.11.0rc0"
 backend_packages = [
+  # TODO: There is a conflict between the runtime dependencies for Python and Scala:
+  #   see https://github.com/pantsbuild/pants/issues/14694#issuecomment-1083565675
   #"pants.backend.codegen.protobuf.python",
   "pants.backend.codegen.thrift.apache.python",
-  #"pants.backend.experimental.codegen.protobuf.java",
   "pants.backend.experimental.codegen.protobuf.scala",
   "pants.backend.experimental.java",
   "pants.backend.experimental.scala",
@@ -25,3 +26,10 @@ enable_resolves = true
 
 [scala.version_for_resolve]
 "jvm-default" = "2.13.8"
+
+[scalapb]
+# In Pants `2.11.x`, the runtime dependency of `scalapb` targets must be explicitly specified. But
+# in `2.12.x`, it is inferred via #14898 based on its presence in the relevant thirdparty resolve.
+runtime_dependencies = [
+  '3rdparty/jvm/com/thesamet/scalapb:scalapb-runtime_2.13'
+]
