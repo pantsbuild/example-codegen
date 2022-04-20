@@ -1,10 +1,9 @@
 syntax = "proto3";
 
-package simple_example;
+package simple_example.v1;
 
 message Person {
   string name = 1;
   int32 id = 2;
   string email = 3;
 }
-
