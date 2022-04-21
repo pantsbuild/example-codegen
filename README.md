@@ -21,4 +21,5 @@ Some commands you can try out:
 Check out our other [example repositories](https://www.pantsbuild.org/docs/example-repos) to see 
 other features like packaging binaries.
 
-Note: to try out Go, you must comment out `pants_ignore` in `pants.toml`.
+Note: to try out Go, you must comment out `pants_ignore` in `pants.toml`. This is so that non-Go 
+users do not need to have Go installed to run the project.

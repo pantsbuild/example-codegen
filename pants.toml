@@ -11,6 +11,9 @@ backend_packages = [
 
 # GOLANG: Remove this line for Go to work. You will also need to have Go installed locally and may
 # need to set `[golang].expected_version`.
+#
+# Normally, you would not do this in your own repository. This is only to allow non-Go users to
+# run this repository without worrying about Go being installed.
 pants_ignore.add = ["src/go"]
 
 [anonymous-telemetry]
