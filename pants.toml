@@ -4,8 +4,14 @@ backend_packages = [
   "pants.backend.codegen.protobuf.lint.buf",
   "pants.backend.codegen.protobuf.python",
   "pants.backend.codegen.thrift.apache.python",
+  "pants.backend.experimental.codegen.protobuf.go",
+  "pants.backend.experimental.go",
   "pants.backend.python",
 ]
+
+# GOLANG: Remove this line for Go to work. You will also need to have Go installed locally and may
+# need to set `[golang].expected_version`.
+pants_ignore.add = ["src/go"]
 
 [anonymous-telemetry]
 enabled = true
