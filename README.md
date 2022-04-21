@@ -4,11 +4,18 @@ An example repository to demonstrate codegen support in Pants.
 
 Refer to these docs for more information:
 
-* [Python Protobuf](https://www.pantsbuild.org/v2.10/docs/protobuf-python)
-* [Python Thrift](https://www.pantsbuild.org/v2.10/docs/thrift-python)
+* [Python Protobuf](https://www.pantsbuild.org/docs/protobuf-python)
+* [Python Thrift](https://www.pantsbuild.org/docs/thrift-python)
 
-Run `./pants export-codegen ::` to see the generated files. This isn't necessary for Pants to 
-use the generated files, but can be useful when debugging or to generate files for IDEs.
+Some commands you can try out:
+
+* `./pants export-codegen ::` - see the generated files.
+    * This isn't necessary for Pants to use the generated files, but can be useful when
+      debugging or to generate files for IDEs.
+* `./pants test ::` - run all tests
+* `./pants fmt ::` - format Protobuf with `buf`
+* `./pants lint ::` - lint Protobuf with `buf`
+* `./pants dependencies <path/to/file>` - see what depends on what
 
 Check out our other [example repositories](https://www.pantsbuild.org/docs/example-repos) to see 
-other features like running linters and formatters, and packaging binaries.
+other features like packaging binaries.

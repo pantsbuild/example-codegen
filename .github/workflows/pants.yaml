@@ -49,6 +49,6 @@ jobs:
         ./pants --version
     - name: Check BUILD files
       run: ./pants tailor --check update-build-files --check
-    - name: Test
+    - name: Lint and test
       run: |
-        ./pants test ::
+        ./pants lint test ::
