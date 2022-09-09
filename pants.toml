@@ -1,5 +1,5 @@
 [GLOBAL]
-pants_version = "2.12.0"
+pants_version = "2.13.0"
 backend_packages = [
   "pants.backend.codegen.protobuf.lint.buf",
   "pants.backend.codegen.protobuf.python",
@@ -15,6 +15,11 @@ backend_packages = [
 # Normally, you would not do this in your own repository. This is only to allow non-Go users to
 # run this repository without worrying about Go being installed.
 pants_ignore.add = ["src/go"]
+
+# Opt in to future behaviors that will become the default in Pants v2.14.
+# These directives should be removed in Pants v2.14.x and higher.
+use_deprecated_directory_cli_args_semantics = false
+use_deprecated_pex_binary_run_semantics = false
 
 [anonymous-telemetry]
 enabled = true
