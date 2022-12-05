@@ -18,13 +18,13 @@ jobs:
   build:
     name: Perform CI Checks
     needs: org-check
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     strategy:
       matrix:
         python-version: [3.8]
     steps:
     - uses: actions/checkout@v3
-    - uses: pantsbuild/actions/init-pants@v1
+    - uses: pantsbuild/actions/init-pants@v2
       # This action bootstraps pants and manages 2-3 GHA caches.
       # See: github.com/pantsbuild/actions/tree/main/init-pants/
       with:
