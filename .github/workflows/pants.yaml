@@ -58,9 +58,9 @@ jobs:
         pants --version
     - name: Check BUILD files
       run: pants tailor --check update-build-files --check '::'
-    - name: Lint and test
+    - name: Lint, typecheck and test
       run: |
-        pants lint test ::
+        pants lint check test ::
     - name: Upload Pants log
       uses: actions/upload-artifact@v3
       with:

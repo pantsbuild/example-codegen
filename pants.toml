@@ -7,6 +7,7 @@ backend_packages = [
   "pants.backend.experimental.codegen.protobuf.go",
   "pants.backend.experimental.go",
   "pants.backend.python",
+  "pants.backend.python.typecheck.mypy",
 ]
 
 # GOLANG: Remove this line for Go to work. You will also need to have Go installed locally and may
@@ -28,3 +29,6 @@ interpreter_constraints = ["CPython>=3.8,<3.11"]
  # `generate-lockfiles` goal for Pants to generate the lockfile for you, although in some
  # situations you may need to manually generate it, as explained in the docs.
 enable_resolves = true
+
+[python-protobuf]
+mypy_plugin = true
