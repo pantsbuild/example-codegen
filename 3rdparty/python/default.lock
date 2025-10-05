@@ -4,9 +4,9 @@
 //
 // --- BEGIN PANTS LOCKFILE METADATA: DO NOT EDIT OR REMOVE ---
 // {
-//   "version": 3,
+//   "version": 4,
 //   "valid_for_interpreter_constraints": [
-//     "CPython<3.11,>=3.8"
+//     "CPython<3.13,>=3.10"
 //   ],
 //   "generated_with_requirements": [
 //     "protobuf==3.20.1",
@@ -16,7 +16,9 @@
 //   "manylinux": "manylinux2014",
 //   "requirement_constraints": [],
 //   "only_binary": [],
-//   "no_binary": []
+//   "no_binary": [],
+//   "excludes": [],
+//   "overrides": []
 // }
 // --- END PANTS LOCKFILE METADATA ---
 
@@ -26,6 +28,8 @@
   "allow_wheels": true,
   "build_isolation": true,
   "constraints": [],
+  "elide_unused_requires_dist": false,
+  "excluded": [],
   "locked_resolves": [
     {
       "locked_requirements": [
@@ -35,11 +39,6 @@
               "algorithm": "sha256",
               "hash": "adfc6cf69c7f8c50fd24c793964eef18f0ac321315439d94945820612849c388",
               "url": "https://files.pythonhosted.org/packages/ef/c8/2e7f7feaf804b7206e6cc8fa3f0f49834a78f7cb127813d2c45e42d5f7bf/protobuf-3.20.1-py2.py3-none-any.whl"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "6f50601512a3d23625d8a85b1638d914a0970f17920ff39cec63aaef80a93fb7",
-              "url": "https://files.pythonhosted.org/packages/0b/db/2b07ad1542511b0b2b2c1796c316c5063f9724b86240f5e6accc1fde5e5f/protobuf-3.20.1-cp39-cp39-macosx_10_9_x86_64.whl"
             },
             {
               "algorithm": "sha256",
@@ -58,33 +57,8 @@
             },
             {
               "algorithm": "sha256",
-              "hash": "cb29edb9eab15742d791e1025dd7b6a8f6fcb53802ad2f6e3adcb102051063ab",
-              "url": "https://files.pythonhosted.org/packages/7b/4b/12c4959e2065a567acb6c632cfbf97cd12e0e5a48d3d267cb034249588bb/protobuf-3.20.1-cp38-cp38-manylinux2014_aarch64.whl"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "7403941f6d0992d40161aa8bb23e12575637008a5a02283a930addc0508982f9",
-              "url": "https://files.pythonhosted.org/packages/98/d9/63b47f719d3cc0f29b36e870ad1d9447b8eef398c2a7b548e67298d9f652/protobuf-3.20.1-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "284f86a6207c897542d7e956eb243a36bb8f9564c1742b253462386e96c6b78f",
-              "url": "https://files.pythonhosted.org/packages/9f/b0/bf25cdbab8841d9111f0f13578150d232339a6483383589648592fe84f4b/protobuf-3.20.1-cp39-cp39-manylinux2014_aarch64.whl"
-            },
-            {
-              "algorithm": "sha256",
               "hash": "3cc797c9d15d7689ed507b165cd05913acb992d78b379f6014e013f9ecb20996",
               "url": "https://files.pythonhosted.org/packages/bd/ca/0d522203bedd17a8c53cb869e1dfd7ac9140c66b76b3cbca25bf601448b2/protobuf-3.20.1-cp310-cp310-macosx_10_9_universal2.whl"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "06059eb6953ff01e56a25cd02cca1a9649a75a7e65397b5b9b4e929ed71d10cf",
-              "url": "https://files.pythonhosted.org/packages/bf/2a/8924d1fbdf6cec34e9e58ee84b2a8bbdb2b58730c4cfab5a29934977ea6d/protobuf-3.20.1-cp38-cp38-macosx_10_9_x86_64.whl"
-            },
-            {
-              "algorithm": "sha256",
-              "hash": "69ccfdf3657ba59569c64295b7d51325f91af586f8d5793b734260dfe2e94e2c",
-              "url": "https://files.pythonhosted.org/packages/c1/4d/1d46234fbdff4ee05cb7ec6cb6ea9282769fa9fefd72d93de4b85fd3d8c4/protobuf-3.20.1-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.whl"
             }
           ],
           "project_name": "protobuf",
@@ -96,19 +70,19 @@
           "artifacts": [
             {
               "algorithm": "sha256",
-              "hash": "8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254",
-              "url": "https://files.pythonhosted.org/packages/d9/5a/e7c31adbe875f2abbb91bd84cf2dc52d792b5a01506781dbcf25c91daf11/six-1.16.0-py2.py3-none-any.whl"
+              "hash": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+              "url": "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl"
             },
             {
               "algorithm": "sha256",
-              "hash": "1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926",
-              "url": "https://files.pythonhosted.org/packages/71/39/171f1c67cd00715f190ba0b100d606d440a28c93c7714febeca8b79af85e/six-1.16.0.tar.gz"
+              "hash": "ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81",
+              "url": "https://files.pythonhosted.org/packages/94/e7/b2c673351809dca68a0e064b6af791aa332cf192da575fd474ed7d6f16a2/six-1.17.0.tar.gz"
             }
           ],
           "project_name": "six",
           "requires_dists": [],
           "requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7",
-          "version": "1.16.0"
+          "version": "1.17.0"
         },
         {
           "artifacts": [
@@ -151,9 +125,12 @@
       "platform_tag": null
     }
   ],
+  "only_builds": [],
+  "only_wheels": [],
+  "overridden": [],
   "path_mappings": {},
-  "pex_version": "2.1.134",
-  "pip_version": "20.3.4-patched",
+  "pex_version": "2.55.2",
+  "pip_version": "24.2",
   "prefer_older_binary": false,
   "requirements": [
     "protobuf==3.20.1",
@@ -161,7 +138,7 @@
     "types-protobuf==3.20.1"
   ],
   "requires_python": [
-    "<3.11,>=3.8"
+    "CPython<3.13,>=3.10"
   ],
   "resolver_version": "pip-2020-resolver",
   "style": "universal",
@@ -170,5 +147,6 @@
     "mac"
   ],
   "transitive": true,
-  "use_pep517": null
+  "use_pep517": null,
+  "use_system_time": false
 }
