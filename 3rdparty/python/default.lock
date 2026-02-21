@@ -4,21 +4,24 @@
 //
 // --- BEGIN PANTS LOCKFILE METADATA: DO NOT EDIT OR REMOVE ---
 // {
-//   "version": 4,
+//   "version": 6,
 //   "valid_for_interpreter_constraints": [
 //     "CPython<3.13,>=3.10"
 //   ],
 //   "generated_with_requirements": [
-//     "protobuf==3.20.1",
+//     "protobuf<7,>=6.30",
 //     "thrift==0.15.0",
-//     "types-protobuf==3.20.1"
+//     "types-protobuf<7,>=6.30"
 //   ],
 //   "manylinux": "manylinux2014",
 //   "requirement_constraints": [],
 //   "only_binary": [],
 //   "no_binary": [],
 //   "excludes": [],
-//   "overrides": []
+//   "overrides": [],
+//   "sources": [],
+//   "lock_style": "universal",
+//   "complete_platforms": []
 // }
 // --- END PANTS LOCKFILE METADATA ---
 
@@ -37,34 +40,39 @@
           "artifacts": [
             {
               "algorithm": "sha256",
-              "hash": "adfc6cf69c7f8c50fd24c793964eef18f0ac321315439d94945820612849c388",
-              "url": "https://files.pythonhosted.org/packages/ef/c8/2e7f7feaf804b7206e6cc8fa3f0f49834a78f7cb127813d2c45e42d5f7bf/protobuf-3.20.1-py2.py3-none-any.whl"
+              "hash": "69915a973dd0f60f31a08b8318b73eab2bd6a392c79184b3612226b0a3f8ec02",
+              "url": "https://files.pythonhosted.org/packages/57/bf/2086963c69bdac3d7cff1cc7ff79b8ce5ea0bec6797a017e1be338a46248/protobuf-6.33.5-py3-none-any.whl"
             },
             {
               "algorithm": "sha256",
-              "hash": "adc31566d027f45efe3f44eeb5b1f329da43891634d61c75a5944e9be6dd42c9",
-              "url": "https://files.pythonhosted.org/packages/19/96/1283259c25bc48a6df98fa096f66fc568b40137b93806ef5ff66a2d166b1/protobuf-3.20.1.tar.gz"
+              "hash": "9b71e0281f36f179d00cbcb119cb19dec4d14a81393e5ea220f64b286173e190",
+              "url": "https://files.pythonhosted.org/packages/4e/b1/c79468184310de09d75095ed1314b839eb2f72df71097db9d1404a1b2717/protobuf-6.33.5-cp39-abi3-manylinux2014_aarch64.whl"
             },
             {
               "algorithm": "sha256",
-              "hash": "cd68be2559e2a3b84f517fb029ee611546f7812b1fdd0aa2ecc9bc6ec0e4fdde",
-              "url": "https://files.pythonhosted.org/packages/4c/be/bdd22d86d24e5b8b08673d80be70d1a72c255f85152ff09b28490904092a/protobuf-3.20.1-cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64.whl"
+              "hash": "cbf16ba3350fb7b889fca858fb215967792dc125b35c7976ca4818bee3521cf0",
+              "url": "https://files.pythonhosted.org/packages/9b/53/a9443aa3ca9ba8724fdfa02dd1887c1bcd8e89556b715cfbacca6b63dbec/protobuf-6.33.5-cp39-abi3-manylinux2014_x86_64.whl"
             },
             {
               "algorithm": "sha256",
-              "hash": "ff8d8fa42675249bb456f5db06c00de6c2f4c27a065955917b28c4f15978b9c3",
-              "url": "https://files.pythonhosted.org/packages/70/75/df318e565cf126a9464b9220ef6adfecb44fb7c68df140bc5680d0ed05c3/protobuf-3.20.1-cp310-cp310-manylinux2014_aarch64.whl"
+              "hash": "a5cb85982d95d906df1e2210e58f8e4f1e3cdc088e52c921a041f9c9a0386de5",
+              "url": "https://files.pythonhosted.org/packages/a2/6b/e48dfc1191bc5b52950246275bf4089773e91cb5ba3592621723cdddca62/protobuf-6.33.5-cp39-abi3-macosx_10_9_universal2.whl"
             },
             {
               "algorithm": "sha256",
-              "hash": "3cc797c9d15d7689ed507b165cd05913acb992d78b379f6014e013f9ecb20996",
-              "url": "https://files.pythonhosted.org/packages/bd/ca/0d522203bedd17a8c53cb869e1dfd7ac9140c66b76b3cbca25bf601448b2/protobuf-3.20.1-cp310-cp310-macosx_10_9_universal2.whl"
+              "hash": "6ddcac2a081f8b7b9642c09406bc6a4290128fce5f471cddd165960bb9119e5c",
+              "url": "https://files.pythonhosted.org/packages/ba/25/7c72c307aafc96fa87062aa6291d9f7c94836e43214d43722e86037aac02/protobuf-6.33.5.tar.gz"
+            },
+            {
+              "algorithm": "sha256",
+              "hash": "8afa18e1d6d20af15b417e728e9f60f3aa108ee76f23c3b2c07a2c3b546d3afd",
+              "url": "https://files.pythonhosted.org/packages/c5/f5/65d838092fd01c44d16037953fd4c2cc851e783de9b8f02b27ec4ffd906f/protobuf-6.33.5-cp39-abi3-manylinux2014_s390x.whl"
             }
           ],
           "project_name": "protobuf",
           "requires_dists": [],
-          "requires_python": ">=3.7",
-          "version": "3.20.1"
+          "requires_python": ">=3.9",
+          "version": "6.33.5"
         },
         {
           "artifacts": [
@@ -107,21 +115,22 @@
           "artifacts": [
             {
               "algorithm": "sha256",
-              "hash": "b0bc0ffde2a339ee25c4b47e9dd515010153ad80c21d16fb57a2429987579801",
-              "url": "https://files.pythonhosted.org/packages/94/0f/bc26638706bfc4b3a7b6a0aa0357b66d30ff332cc6c378b8ddc85bc41f9a/types_protobuf-3.20.1-py3-none-any.whl"
+              "hash": "2641f78f3696822a048cfb8d0ff42ccd85c25f12f871fbebe86da63793692140",
+              "url": "https://files.pythonhosted.org/packages/aa/43/58e75bac4219cbafee83179505ff44cae3153ec279be0e30583a73b8f108/types_protobuf-6.32.1.20251210-py3-none-any.whl"
             },
             {
               "algorithm": "sha256",
-              "hash": "36e3426476e373da6f2bb8a81a1194478cd1f33813a4e254849146d28c450e00",
-              "url": "https://files.pythonhosted.org/packages/7d/3c/d22e8e1767d1525366970f3013ab1b614ca203d6e5ecfea977b0cf0952e3/types-protobuf-3.20.1.tar.gz"
+              "hash": "c698bb3f020274b1a2798ae09dc773728ce3f75209a35187bd11916ebfde6763",
+              "url": "https://files.pythonhosted.org/packages/c2/59/c743a842911887cd96d56aa8936522b0cd5f7a7f228c96e81b59fced45be/types_protobuf-6.32.1.20251210.tar.gz"
             }
           ],
           "project_name": "types-protobuf",
           "requires_dists": [],
-          "requires_python": null,
-          "version": "3.20.1"
+          "requires_python": ">=3.9",
+          "version": "6.32.1.20251210"
         }
       ],
+      "marker": null,
       "platform_tag": null
     }
   ],
@@ -129,13 +138,13 @@
   "only_wheels": [],
   "overridden": [],
   "path_mappings": {},
-  "pex_version": "2.55.2",
+  "pex_version": "2.81.0",
   "pip_version": "24.2",
   "prefer_older_binary": false,
   "requirements": [
-    "protobuf==3.20.1",
+    "protobuf<7,>=6.30",
     "thrift==0.15.0",
-    "types-protobuf==3.20.1"
+    "types-protobuf<7,>=6.30"
   ],
   "requires_python": [
     "CPython<3.13,>=3.10"
